@@ -1,14 +1,20 @@
 import React from 'react';
 import './styles/App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  ErrorPage,
+  WelcomePage,
+} from "./pages"
 
-function App() {
+function App(){
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-        Test
-        </p>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<WelcomePage/>}/>
+          <Route path="*" element={<ErrorPage/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
