@@ -18,3 +18,7 @@ code {
   --color-3:#DC3535;
   --color-4:#B01E68;
 }
+#root{
+  height: 100%;
+  width: 100%;
+}

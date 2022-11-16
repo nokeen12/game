@@ -8,14 +8,12 @@ import {
 
 function App(){
   return (
-    <div className="App">
       <Router>
         <Routes>
           <Route path="/" element={<WelcomePage/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
       </Router>
-    </div>
   );
 }
 
