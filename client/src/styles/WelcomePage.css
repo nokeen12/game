@@ -7,6 +7,7 @@
 }
 .bubble{
     display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
     background: radial-gradient(black, darkgrey 300%);
@@ -24,6 +25,30 @@
     animation: bubblegrow 600ms infinite ease-in-out;
     cursor:pointer;
 }
+.t1{
+    z-index: 6;
+}
+.t2{
+    z-index: 5;
+    display: none;
+}
+.t3{
+    z-index: 4;
+    display: none;
+}
+.t4{
+    z-index: 3;
+    display: none;
+}
+.t5{
+    z-index: 2;
+    display: none;
+}
+.t6{
+    z-index: 1;
+    display: none;
+}
+
 @keyframes bubblegrow{
     0%{
         padding: 10px;
